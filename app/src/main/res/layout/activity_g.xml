@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.zmb.androidtrainingpractice.layoutpractice.GActivity">
+    <TextView
+        android:id="@+id/colortext"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+    <AutoCompleteTextView
+        android:id="@+id/atv"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/mp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progress1"
+            android:rotation="90"
+            android:layout_marginTop="160dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
