@@ -13,10 +13,16 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zmb.androidtrainingpractice.actionbarpractice.ActionBarActivity;
+import com.zmb.androidtrainingpractice.baidumappractice.BaiduMapActivity;
+import com.zmb.androidtrainingpractice.gridviewpractice.GridviewPracticeActivity;
 import com.zmb.androidtrainingpractice.layoutpractice.FActivity;
 import com.zmb.androidtrainingpractice.layoutpractice.GActivity;
 import com.zmb.androidtrainingpractice.layoutpractice.LActivity;
 import com.zmb.androidtrainingpractice.layoutpractice.RActivity;
+import com.zmb.androidtrainingpractice.sensorpractice.AccelerometorSensorActivity;
+import com.zmb.androidtrainingpractice.sensorpractice.CompressActivity;
+import com.zmb.androidtrainingpractice.sensorpractice.LightSensorActivity;
+import com.zmb.androidtrainingpractice.sensorpractice.OrientationSensorActivity;
 import com.zmb.androidtrainingpractice.webviewpractice.WebViewActivity;
 
 import java.util.ArrayList;
@@ -56,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
         demoItemEntityList.add(new DemoItemEntity("RelativeLayoutPractice", RActivity.class));
         demoItemEntityList.add(new DemoItemEntity("FrameLayoutPractice", FActivity.class));
         demoItemEntityList.add(new DemoItemEntity("GrideLayoutPractice", GActivity.class));
+        demoItemEntityList.add(new DemoItemEntity("GridViewPractice", GridviewPracticeActivity.class));
+        demoItemEntityList.add(new DemoItemEntity("LightSensorActivity", LightSensorActivity.class));
+        demoItemEntityList.add(new DemoItemEntity("AccelerometorSensorActivity", AccelerometorSensorActivity.class));
+        demoItemEntityList.add(new DemoItemEntity("OrientationSensorActivity", OrientationSensorActivity.class));
+        demoItemEntityList.add(new DemoItemEntity("CompressActivity", CompressActivity.class));
+        demoItemEntityList.add(new DemoItemEntity("BaiduMapActivity", BaiduMapActivity.class));
     }
     BaseAdapter adapter = new BaseAdapter() {
         @Override
