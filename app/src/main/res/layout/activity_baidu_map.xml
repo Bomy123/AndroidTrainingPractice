@@ -4,18 +4,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.zmb.androidtrainingpractice.baidumappractice.BaiduMapActivity">
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/seltype"
-        android:src="@drawable/selmaptype"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|top"
-        />
+
+
 <com.baidu.mapapi.map.MapView
     android:id="@+id/map_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
     ></com.baidu.mapapi.map.MapView>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        >
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/seltype"
+            android:src="@drawable/selmaptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+            <ImageView
+                android:id="@+id/normalmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/seltype"
+                android:layout_alignTop="@id/seltype"
+                android:layout_alignLeft="@id/seltype"
+                android:layout_alignBottom="@id/seltype"
+                android:src="@drawable/ptmap"
+                />
+        <ImageView
+            android:id="@+id/roadmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seltype"
+            android:layout_alignTop="@id/seltype"
+            android:layout_alignLeft="@id/seltype"
+            android:layout_alignBottom="@id/seltype"
+            android:src="@drawable/lkmap"
+
+            />
+        <ImageView
+            android:id="@+id/wxmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seltype"
+            android:layout_alignTop="@id/seltype"
+            android:layout_alignLeft="@id/seltype"
+            android:layout_alignBottom="@id/seltype"
+            android:src="@drawable/wxmap"
+            />
+    </RelativeLayout>
 
 </merge>
